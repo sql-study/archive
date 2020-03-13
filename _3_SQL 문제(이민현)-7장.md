@@ -2,9 +2,9 @@
 **각 판매물품의 제품명, 제품가격, 판매일을 가져온다.
  대신 2000년 2월의 월요일과 금요일에만 판매된 제품을 가져오며, 가격 내림차순 정렬한다.**
 
-> DB : sh
-> TABLE : COSTS, TIMES(필수아님)
-> 조건 : JOIN(필수아님), IN(필수아님), ORDER BY
+> DB : sh  
+> TABLE : COSTS, TIMES(필수아님)  
+> 조건 : JOIN(필수아님), IN(필수아님), ORDER BY  
 
 #### 결과
 |PROD_NAME|UNIT_PRICE|TIME_ID|
@@ -34,9 +34,9 @@
 온라인 구매건 주문내 물품중 200달러와 300달러 사이의 가격을 가진 물품의 개수를 가져온다.
 해당하는 물품이 없으면 0으로 표시된다.**
 
-> DB : oe
-> TABLE : ORDERS, ORDER_ITEMS, CUSTOMERS
-> 조건 : JOIN, BETWEEN, GROUP BY
+> DB : oe  
+> TABLE : ORDERS, ORDER_ITEMS, CUSTOMERS  
+> 조건 : JOIN, BETWEEN, GROUP BY  
 
 #### 결과
 |ORDER_ID|CUST_FIRST_NAME|비싼 물품|
@@ -61,9 +61,9 @@
 단 직원의 firstname은 e가 두개 포함되어 있으며, 고용날짜가 1987년이어야 한다. (LIKE 필수 사용)
 또한 부장이 없을 경우, '없음'으로 표시한다.**
 
-> DB : hr
-> TABLE : employees
-> 조건 : JOIN, LIKE, COALESCE(다른것 사용해도 됨)
+> DB : hr  
+> TABLE : employees  
+> 조건 : JOIN, LIKE, COALESCE(다른것 사용해도 됨)  
 
 #### 결과
 |first_name|hire_date|salary|부장|
