@@ -121,6 +121,7 @@ CREATE TABLE 판매통계 (
 ```
 
 #### 데이터 생성
+
 ```sql
 INSERT INTO 부서 VALUES (1, '부서1', NULL);
 INSERT INTO 부서 VALUES (2, '부서2', 1);
